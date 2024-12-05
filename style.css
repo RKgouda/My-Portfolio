@@ -1,0 +1,471 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    color: white;
+}
+
+body{
+    height: auto;
+    width: 100%;    
+    background-color: black !important;
+        background-position: center;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+       }
+hr{
+    border: 0;
+        background-color: rgb(14, 37, 44);
+        height: 1.5px;
+        margin: 50px 50px;
+        
+}
+* nav {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: rgb(13, 67, 72);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+nav ul{
+    display: flex;
+        align-items: center;
+        gap: 1.10rem;
+       
+}
+nav ul li{
+list-style: none;
+display: inline-block;
+font-size: 15px;
+margin: 0 10px;
+position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009680;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s; 
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.logo{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    cursor: pointer;
+}
+.logo img{
+    height: 60px;
+    width: 70px;
+    border-radius: 50%;
+}
+.name{
+color: aquamarine;
+font-size: 2rem;
+}
+
+/* ======    HOME SECTION ============= */
+.hero{
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin: 30px;
+padding: 30px;
+width: 100%;
+height: auto;
+
+}
+.left{
+    width: 100%;
+    height: 450px;
+    padding: 0px;
+    
+}
+.left img{
+    width: 400px;
+    height: 450px;
+    border-style: dashed;
+    /* border-radius: 50% 20% 50% 20%/ 20% 50% 20% 50%; */
+    border-radius: 50% 15% 50% 15%/ 15% 50% 15% 50%;
+}
+
+.right {
+    font-size: 50px;
+    width: 100%;
+}
+.purple{
+    color: chartreuse;
+    font-size: 70px;
+}
+#element{
+    color: cyan;
+}
+.tagline{
+    font-size: 40px;
+    font-style: italic;
+}
+/* ============ ABOUT SECTION ========== */
+.heading{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-section{
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content:space-between;
+    position: relative;
+    height: auto;
+} 
+.left-abt{
+       margin: 30px;
+    padding: 30px;
+    width: 100%;
+}
+.left-abt img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.right-abt{
+width: 100%;
+height: auto;
+margin: 15px;
+display:block;
+align-items: center;
+justify-content: center;
+}
+.bio{
+    margin: 10px;
+    padding: 10px;
+}
+.education{
+    list-style-type:square;
+    margin-left: 20px;
+}
+
+  /* =============SKILLS SECTION============== */
+.container-skills{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+  .skills{
+    width: 100%;
+    /* max-width: 500px; */
+    /* height: 70vh; */
+    height: auto;
+    margin: 30px;
+    padding: 30px;
+    display:block;
+    align-items: center;
+    justify-content:center;
+}
+.h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+  margin: 30px;
+    color: #fff;
+    font-size: 30px;
+}
+.progress-bar{
+    background: #959595 !important;
+    width: 600px;
+    height: 25px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.progress-bar div{
+height: 25px;
+border-radius: 15px;
+
+}
+.pull-bar{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+}
+.html{
+    background:gold;
+    width: 90%;
+}
+.css {
+    background:aquamarine;
+    width: 80%;
+}
+.Bootstrap {
+    background:cornflowerblue;
+    width: 90%;
+}
+.javascript {
+    background:#009680;
+    width: 72%;
+}
+.python {
+    background:chartreuse;
+    width: 77%;
+}
+.mysql {
+    background:darkolivegreen;
+    width: 72%;
+}
+
+/* ===========  PROJECTS SECTION  ============= */
+.container-project{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pro{
+display:-ms-flexbox;
+box-sizing: border-box;
+align-items: center;
+justify-content:space-around;
+display:block;
+border:#fff;
+background-color: #151414da;
+width: 35%;
+height: auto;
+margin: 30px;
+padding: 30px;
+/* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+}
+.pro-img{
+    width: 100%;
+    height:fit-content;
+    
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    object-position: center center;
+    display: flex;
+   
+}
+.pro-img img
+{
+    width:inherit;
+    height: 250px;        
+}
+.pro-img:hover {
+    transform: scale(1.2);
+    transition: 2s;
+}
+.pro-title{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
+.pro-cont{
+position:relative;
+margin: 20px;
+width:fit-content;
+overflow: hidden;
+line-break:auto;
+word-spacing: normal;
+font-size: 13px;
+}
+
+/* =========== RESUME SECTION  ============ */
+.container-resume{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.inr-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aquamarine;
+    margin-top: 20px;
+}
+.experience{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 15px;
+}
+.experience h5{
+    color: chocolate;
+}
+.work-exp{
+    width: 100%;
+    height: auto;
+    margin: 15px 10px;
+    padding: 25px;
+}
+.work-exp span{
+    color: rgb(27, 146, 146);
+}
+.internship{
+        width: 100%;
+            height: auto;
+            margin: 15px 15px;
+            padding: 25px;
+}
+.internship span{
+    color: rgb(27, 146, 146);
+}
+.resume{
+    display: flex;
+    text-align: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 20px;
+}
+.resume .btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #009680;
+    color: blue;
+    padding: 10px 20px;
+    margin-left: 70px;
+    border: none;
+    cursor: pointer;
+}
+.container-resume .btn:hover{
+    color: gold;
+    background: #009680;
+}
+
+/* ============   CONTACT SECTION  ============ */
+.container-cont{
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content:space-around;
+    position: absolute;
+    
+}
+.left-cont img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+   
+}
+/* ========= FOOTER  ============= */
+#footer {
+    background-color: #1f1d1d;
+    color: white;
+    padding: 10px 0;  
+    bottom: 0;
+    width: 100%;
+    
+}
+ .social-media-icon {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 0 23px;
+     cursor: pointer;
+ }
+
+ .social-media-icon a {
+     color: white;
+     text-decoration: none;
+ }
+ /* ======== Media Queries */
+ @media (max-width: 768px) {
+     .hero {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .hero .left,
+     .hero .right {
+         width: 100%;
+     }
+
+     .hero .left img {
+         width: 80%;
+         height: auto;
+     }
+
+     nav ul {
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+     }
+
+     .about-section {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .left-abt img {
+         width: 150px;
+         height: 150px;
+     }
+
+     .container-project .pro {
+         width: 100%;
+         /* Stack projects on mobile */
+         margin: 10px 0;
+     }
+
+     .progress-bar {
+         width: 100%;
+     }
+ }
+
+ /* Mobile-specific enhancements for smaller screens */
+ @media (max-width: 480px) {
+     .container-cont {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .left-cont img {
+         width: 250px;
+         height: 250px;
+     }
+
+     .logo img {
+         height: 50px;
+         width: 60px;
+     }
+
+     .hero {
+         margin: 20px;
+         padding: 20px;
+     }
+
+     .hero .left,
+     .hero .right {
+         width: 100%;
+     }
+
+     .pro-img img {
+         height: 200px;
+     }
+ }
